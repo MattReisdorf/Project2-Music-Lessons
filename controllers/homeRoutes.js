@@ -25,7 +25,7 @@ router.get('/', async  (req, res) => {
         
         res.render('layouts/main', {
             lessons,
-            // logged_in: req.session.logged_in
+            logged_in: req.session.logged_in
         });
     }
 

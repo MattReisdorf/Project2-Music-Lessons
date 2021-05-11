@@ -11,14 +11,10 @@ Notes.belongsTo(Lesson, {
     foreignKey: 'lesson_id'
 });
 
-User.hasMany(Notes, {
-    foreignKey: 'user_id'
-});
-
 User.hasMany(Lesson, {
     foreignKey: 'user_id'
 });
 
 
 
-module.exports = { Lesson, Notes };
+module.exports = { Lesson, Notes, User };
