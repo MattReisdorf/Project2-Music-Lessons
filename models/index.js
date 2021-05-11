@@ -1,8 +1,13 @@
 const Lesson = require('./Lesson');
 const Notes = require('./Notes');
 
-Notes.belongsTo(Lesson, {
-    foreignKey: 'id'
+Lesson.hasOne(Notes, {
+    foreignKey: 'lesson_id',
+    onDelete: 'CASCADE'
 });
 
-module.exports = { Lesson, Project };
+Notes.belongsTo(Lesson, {
+    foreignKey: 'lesson_id'
+});
+
+module.exports = { Lesson, Notes };

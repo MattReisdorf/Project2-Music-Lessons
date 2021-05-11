@@ -41,6 +41,7 @@ Note.init(
         },
         lesson_id: {
             type: DataTypes.INTEGER,
+            // allowNull: false,
             references: {
                 model: 'lesson',
                 key: 'id',
@@ -56,4 +57,4 @@ Note.init(
     }
 );
 
-module.exports = Notes;
+module.exports = Note;

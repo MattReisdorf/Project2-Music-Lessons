@@ -1,9 +1,24 @@
-{
-    "first_note": "C",
-    "second_note": "D",
-    "third_note": "E",
-    "fourth_note": "F",
-    "fifth_note": "G",
-    "sixth_note": "A",
-    "seventh_note": "B"
-}
+[
+    {
+        "first_note": "C",
+        "second_note": "D",
+        "third_note": "E",
+        "fourth_note": "F",
+        "fifth_note": "G",
+        "sixth_note": "A",
+        "seventh_note": "B",
+        "lesson_id": 1
+    },
+    {
+    
+        "first_note": "A",
+        "second_note": "B",
+        "third_note": "C",
+        "fourth_note": "D",
+        "fifth_note": "E",
+        "sixth_note": "F",
+        "seventh_note": "G",
+        "lesson_id": 2
+    
+    }
+]
