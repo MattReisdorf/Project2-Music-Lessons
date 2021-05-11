@@ -9,23 +9,23 @@ router.get('/', async  (req, res) => {
                 {
                     model: Notes,
                     attributes: ['id',
-                                'first_note',
-                                'second_note',
-                                'third_note',
-                                'fourth_note',
-                                'fifth_note',
-                                'sixth_note',
-                                'seventh_note',
+                                'note_0',
+                                'note_1',
+                                'note_2',
+                                'note_3',
+                                'note_4',
+                                'note_5',
+                                'note_6',
                                 'lesson_id']
                 },
             ],
         });
 
         const lessons = lessonData.map((lesson) => lesson.get({ plain: true }));
-
-        res.render('homepage', {
+        
+        res.render('layouts/main', {
             lessons,
-            logged_in: req.session.logged_in
+            // logged_in: req.session.logged_in
         });
     }
 
