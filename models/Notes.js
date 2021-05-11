@@ -11,31 +11,31 @@ Note.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        first_note: {
+        note_0: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        second_note: {
+        note_1: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        third_note: {
+        note_2: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        fourth_note: {
+        note_3: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        fifth_note: {
+        note_4: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        sixth_note: {
+        note_5: {
             type: DataTypes.STRING,
             allowNull: false
         },
-        seventh_note: {
+        note_6: {
             type: DataTypes.STRING,
             allowNull: false
         },
