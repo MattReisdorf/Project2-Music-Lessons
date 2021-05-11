@@ -8,13 +8,13 @@ router.get('/', async (req, res) => {
             include: {
                 model: Notes,
                 attributes: ['id',
-                            'first_note',
-                            'second_note',
-                            'third_note',
-                            'fourth_note',
-                            'fifth_note',
-                            'sixth_note',
-                            'seventh_note',
+                            'note_0',
+                            'note_1',
+                            'note_2',
+                            'note_3',
+                            'note_4',
+                            'note_5',
+                            'note_6',
                             'lesson_id']
             }
         });
@@ -32,13 +32,13 @@ router.get('/:id', async (req, res) => {
             include: {
                 model: Notes,
                 attributes: ['id',
-                            'first_note',
-                            'second_note',
-                            'third_note',
-                            'fourth_note',
-                            'fifth_note',
-                            'sixth_note',
-                            'seventh_note',
+                            'note_0',
+                            'note_1',
+                            'note_2',
+                            'note_3',
+                            'note_4',
+                            'note_5',
+                            'note_6',
                             'lesson_id']
             }
         });
