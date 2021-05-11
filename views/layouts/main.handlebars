@@ -1,5 +1,24 @@
-{{#each lesson as |lesson|}}
-<a class="list-group btn list-item main-list single-lesson" href="/lessons/{{lessons.id}}">
-<span class="float-left">{{lesson.title}}</span>
-</a>
-{{/each}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons</title>
+</head>
+<body>
+<nav>
+    {{#if logged_in}}
+    <a href="/profile">profile</a> |
+    <button class="no-button" id="logout">logout</button>
+    {{else}}
+    <a href="/login">login</a>
+    {{/if}}
+</nav>
+
+ {{#if logged_in}}
+ <script src="/js/logout.js"></script>
+ {{/if}}
+ </body>
+ 
+</html>
