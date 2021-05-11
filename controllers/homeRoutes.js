@@ -24,7 +24,7 @@ router.get('/', async  (req, res) => {
         const lessons = lessonData.map((lesson) => lesson.get({ plain: true }));
 
         res.render('homepage', {
-            projects,
+            lessons,
             logged_in: req.session.logged_in
         });
     }
