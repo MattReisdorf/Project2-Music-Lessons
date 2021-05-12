@@ -1,10 +1,12 @@
 [
     {
         "id": 1,
-        "name": "C Major"
+        "name": "C Major",
+        "user_id": 1
     },
     {
         "id": 2,
-        "name": "A Minor"
+        "name": "A Minor",
+        "user_id": 2
     }
 ]

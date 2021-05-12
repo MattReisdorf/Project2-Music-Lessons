@@ -26,6 +26,7 @@ router.get('/', async (req, res) => {
     }
 });
 
+
 router.get('/:id', async (req, res) => {
     try {
         const lessonData = await Lesson.findByPk(req.params.id, {
