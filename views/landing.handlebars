@@ -1,0 +1,40 @@
+<style>
+    #meal-image {
+      max-height: 150px;
+    }
+    #landing-page {
+      height: 100vh;
+      display: block;
+    }
+    #nav {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      height: 12vh;
+    }
+  </style>
+
+<body>
+<nav id="nav">
+    <section class="sec" id="landing-page">
+        <div class="content">
+          <div class="textBox">
+            <h2>Create Your Own Lessons To Practice Any Scale Variation You Want<br><span>Here!</span></h2>
+            <a href="#" onclick="switchPage('toDashboard')">SignUp!</a>
+          </div>
+          <div class="imgBox">
+            <img src="logo.png" class="food" alt="some food image">
+          </div>
+        </div>
+       
+      </section>
+    {{#if logged_in}}
+    <a href="/profile">profile</a> 
+    <button class="no-button" id="logout">logout</button>
+    {{else}}
+    <a href="/login">login</a>
+    {{/if}}
+</nav>
+
+<script src="/js/login.js" content-type = 'application/javascript'></script>
