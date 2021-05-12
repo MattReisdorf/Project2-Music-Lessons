@@ -16,16 +16,17 @@ router.get('/', async  (req, res) => {
                                 'note_4',
                                 'note_5',
                                 'note_6',
-                                'lesson_id']
+                               'lesson_id']
                 },
             ],
         });
 
-        const lessons = lessonData.map((lesson) => lesson.get({ plain: true }));
+        const lesson = lessonData.map((lesson) => lesson.get({ plain: true }));
         
         res.render('layouts/main', {
-            lessons,
-            // logged_in: req.session.logged_in
+            ...lesson,
+            logged_in: req.session.logged_in,
+            logged_lesson: req.session.logged_lesson
         });
     }
 
@@ -44,8 +45,12 @@ router.get('/login', (req, res) => {
 
     res.render('login');
 });
-
-
-
+router.get('/signup', (req, res) => {
+   // if(req.session.logged_in) {
+     //   res.redirect('/');
+       // return;
+    //}
+    res.render('signup');
+});
 
 module.exports = router;
