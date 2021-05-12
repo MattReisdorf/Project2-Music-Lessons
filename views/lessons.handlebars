@@ -1,0 +1,15 @@
+<h1> LESSONS </h1>
+
+
+
+
+<nav>
+    {{#if logged_in}}
+    <a href="/profile">profile</a> 
+    <button class="no-button" id="logout">logout</button>
+    {{/if}}
+    {{#unless logged_in}}
+    <a href="/login">login</a>
+    {{/unless}}
+</nav>
+
