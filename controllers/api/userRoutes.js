@@ -1,5 +1,49 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User, Lesson } = require('../../models');
+
+
+
+router.get('/', async (req, res) => {
+  try {
+    const userData = await User.findAll({
+        include: [
+          {
+            model: Lesson,
+            attributes: ['id','name']
+          }
+        ]
+    });
+    res.status(200).json(userData);
+  }
+  catch(err) {
+    res.status(500).json(err);
+  }
+});
+
+
+router.get('/:id', async (req, res) => {
+  try {
+    const userData = await User.findByPk(req.params.id, {
+        include: [
+          {
+            model: Lesson,
+            attributes: ['id','name']
+          }
+        ]
+    });
+
+    if (!userData) {
+      res.status(404).json({ message: 'No User Found With This ID' });
+    }
+
+    res.status(200).json(userData);
+  }
+  catch(err) {
+    res.status(500).json(err);
+  }
+})
+
+
 
 router.post('/', async (req, res) => {
   try {
@@ -49,6 +93,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/logout', (req, res) => {
+  console.log('hit logout route');
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
