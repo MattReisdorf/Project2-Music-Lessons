@@ -23,7 +23,7 @@ router.get('/', async  (req, res) => {
 
         const lesson = lessonData.map((lesson) => lesson.get({ plain: true }));
         
-        res.render('layouts/main', {
+        res.render('landing', {
             ...lesson,
             logged_in: req.session.logged_in,
             logged_lesson: req.session.logged_lesson
@@ -46,10 +46,10 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 router.get('/signup', (req, res) => {
-   // if(req.session.logged_in) {
-     //   res.redirect('/');
-       // return;
-    //}
+   if(req.session.logged_in) {
+       res.redirect('/');
+       return;
+    }
     res.render('signup');
 });
 
