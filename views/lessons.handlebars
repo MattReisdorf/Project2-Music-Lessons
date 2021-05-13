@@ -3,15 +3,19 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-links-css" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lessons</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Lesson</a>
-                <a class="dropdown-item" href="#">Lesson</a>
-                <a class="dropdown-item" href="#">Lesson</a>
+                {{#each lessons as |lesson|}}
+                <a class = "dropdown-item" href = "/lessons/{{lesson.name}}">
+                    {{lesson.name}}
+                </a>
+                {{/each}}
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="addlesson">Add A Lesson</a>
+                
+               
             </div>
         </li>
         <li class="nav-item resources-css">
-            <a class="nav-link nav-links-css justify-content-end" href="#">Resources</a>
+            <a class="nav-link nav-links-css justify-content-end" href="resources">Resources</a>
         </li>
     </ul>
 </header>
@@ -19,9 +23,13 @@
 
 <div class = "center-screen">
     <div class = "placeholder-box" id = 'note-box'>
+        {{#each notes as |note|}}
+
+
         <span class = "placeholder-span" id = "note-span">
-            C
+            {{note}}
         </span>
+        {{/each}}
     </div>
 </div>
 

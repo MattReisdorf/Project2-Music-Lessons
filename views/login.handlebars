@@ -1,29 +1,26 @@
-<div class="jumbotron jumbotron-fluid h-25 p-3 bg-warning text-light">
-    <div class="container">
-        <h1 class="display-4 d-flex justify-content-center">LOGIN</h1>
-        <p class="lead d-flex justify-content-center">Login To View Or Add Lessons.</p>
-    </div>
-</div>
+<header class = 'fixed-top header-css'>
+  <ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+        <p class="nav-links-css">Login</p>
+    </li>
+  </ul>
+</header>
 
-
-<div class="container">
-    <div class="row">
-        <form class=" col-sm-12 login-form">
-            <h2 class="page-title">Login</h2>
-            <div class="form-group">
-                <label for="email-login">Email:</label>
-                <input class="col-sm-12 form-input" type="text" id="email-login" />
-            </div-class>
-            <div class="form-group">
-                <label for="password-login">Password:</label>
-                <input class="col-sm-12 form-input" type="password" id="password-login"/>
-            </div>
-            <div class="form-group">
-                <button class="col-sm-12 btn btn-primary" id='login-button'>Login</button>
-            </div>
-           <a class="nav-link text-center" href="/signup">SIGN ME UP</a>
-        </form>
-    </div>
+<div class = "center-screen">
+    <form class = "login-form">
+        <div class = "form-group">
+            <label for = "email-login">Email:</label>
+            <input class = "form-input" type = "text" id = "email-login" />
+        </div>
+        <div class = "form-group">
+            <label for = "password-login">Password:</label>
+            <input class = "form-input" type = "password" id = "password-login" />
+        </div>
+        <div class = "form-group">
+            <button class = "btn btn-dark" id = "login-button">Login</button>
+        </div>
+        <a class = "nav-link text-center" href = "/signup">Sign Up</a>
+    </form>
 </div>
 
 <script src="/js/login.js"></script>
