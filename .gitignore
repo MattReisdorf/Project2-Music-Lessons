@@ -2,3 +2,4 @@ node_modules
 .env
 public/js/test.js
 notes-from-office-hours.txt
+public/js/clicktest.js

@@ -1,15 +1,38 @@
-<h1> LESSONS </h1>
+<header class = 'fixed-top header-css'>
+    <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-links-css" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lessons</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Lesson</a>
+                <a class="dropdown-item" href="#">Lesson</a>
+                <a class="dropdown-item" href="#">Lesson</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="addlesson">Add A Lesson</a>
+            </div>
+        </li>
+        <li class="nav-item resources-css">
+            <a class="nav-link nav-links-css justify-content-end" href="#">Resources</a>
+        </li>
+    </ul>
+</header>
 
 
+<div class = "center-screen">
+    <div class = "placeholder-box" id = 'note-box'>
+        <span class = "placeholder-span" id = "note-span">
+            C
+        </span>
+    </div>
+</div>
 
 
-<nav>
-    {{#if logged_in}}
-    <a href="/profile">profile</a> 
-    <button class="no-button" id="logout">logout</button>
-    {{/if}}
-    {{#unless logged_in}}
-    <a href="/login">login</a>
-    {{/unless}}
-</nav>
+<footer class = "footer fixed-bottom footer-css">
+    <div class = "d-flex justify-content-center">
+        <button type = "button" class = "btn btn-css" id = "logout">
+            Logout
+        </button>
+    </div>
+</footer>
 
+
+<script src = "/js/clicktest.js"></script>
