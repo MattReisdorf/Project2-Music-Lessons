@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: beige;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textbox h2{
+    color: black;
+    font-size: 5em;
+    line-height: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content.textBox h2 span{
+    font-size: 4em;
+}
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.content .imgBox img{
+    max-width: 260px;
+}
+#landing-page {
+    height: 100vh;
+    display: block;
+  }
+  #nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 12vh;
+    background: orange;
+  }
+.header-css {
+    background-color: rgb(254, 164, 0);
+}
+
+.nav-links-css {
+    color: black;
+    font-size: 2em;
+}
+
+.resources-css {
+
+    margin-right: 0%;
+    margin-left: auto;
+    font-size: 1em;
+}
+
+.footer-css {
+    background-color: black;
+}
+
+.btn-css {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+}
+
+.placeholder-box {
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.placeholder-span {
+    color: white;
+    font-size: 3em;
+}
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+    .nav-links-css {
+        color: black;
+        font-size: 2em;
+    }
+    .resources-css {
+
+        margin-right: 0%;
+        margin-left: auto;
+        font-size: 1em;
+    }
+    .btn-css {
+        background-color: black;
+        color: white;
+        font-size: 2em;
+    }
+    .placeholder-span {
+        color: white;
+        font-size: 2em;
+    }
+}
