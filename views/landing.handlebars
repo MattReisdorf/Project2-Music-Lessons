@@ -1,42 +1,47 @@
-<style>
-    #meal-image {
-      max-height: 150px;
-    }
-    #landing-page {
-      height: 100vh;
-      display: block;
-    }
-    #nav {
-      position: sticky;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-      height: 12vh;
-    }
-  </style>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music Lessons</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/public/css/style.css">
+  </head>
 
 <body>
-<nav id="nav">
-    <section class="sec" id="landing-page">
+  <nav id="nav">
+      <div class="nav-wrapper">
+          <div style="float: left; margin:1% 2%;">
+          <button id="login-btn" class="btn">Login</button>
+          <button id="signup-btn" class="btn">SignUp</button>
+          </div>
+      </div>
+    <!--{{#if logged_in}}
+    <a href="/profile">profile</a> 
+    <button class="no-button" id="/logout">logout</button>
+    {{else}}
+    <a href="/login">login</a>
+    {{/if}} -->
+         </nav>
+          <section class="sec" id="landing-page">
+       <!-- <header>
+        </header> -->
         <div class="content">
           <div class="textBox">
             <h2>Create Your Own Lessons To Practice Any Scale Variation You Want<br><span>Here!</span></h2>
-            <a href="#" onclick="switchPage('toDashboard')">SignUp!</a>
           </div>
           <div class="imgBox">
-            <img src="logo.png" class="food" alt="some food image">
+            <img src="circleof5ths.png" class="music" alt="circle of fifths image">
           </div>
         </div>
-       
       </section>
-<nav>
-    {{#if logged_in}}
-    <a href="/profile">profile</a> 
-    <button class="no-button" id="logout">logout</button>
-    {{else}}
-    <a href="/login">login</a>
-    {{/if}}
-</nav>
-
 <script src="/js/login.js" content-type = 'application/javascript'></script>
-</nav>
+
+
