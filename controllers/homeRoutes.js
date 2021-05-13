@@ -24,10 +24,10 @@ const withAuth = require('../utils/auth');
 //         const lesson = lessonData.map((lesson) => lesson.get({ plain: true }));
         
 //         res.render('landing', {
-//             ...lesson,
-//             logged_in: req.session.logged_in,
-//             logged_lesson: req.session.logged_lesson
-//         });
+ //            ...lesson,
+ //            logged_in: req.session.logged_in,
+  //           logged_lesson: req.session.logged_lesson
+   //      });
 //     }
 
 //     catch (err) {
