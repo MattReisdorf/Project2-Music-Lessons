@@ -1,4 +1,25 @@
-<style>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning text-light">
+  <a class="navbar-brand" href="#">Project 2</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/signup">Sign Up</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+{{!-- <style>
     #meal-image {
       max-height: 150px;
     }
@@ -13,22 +34,41 @@
       z-index: 10;
       height: 12vh;
     }
-  </style>
+</style> --}}
 
 <body>
+<div class="container ">
+  <div class="row flex-lg-row d-flex justify-content-between ">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+    </div>
+  </div>
+
+  <div>
+  <img src="../assets/circleo5s.png" class="rounded float-right" alt="...">
+  </div>
+</div>
+
+
+</div>
+
 <nav id="nav">
-    <section class="sec" id="landing-page">
+    {{!-- <section class="sec" id="landing-page">
         <div class="content">
           <div class="textBox">
             <h2>Create Your Own Lessons To Practice Any Scale Variation You Want<br><span>Here!</span></h2>
-            <a href="#" onclick="switchPage('toDashboard')">SignUp!</a>
+            {{!-- <a href="/signup" onclick="switchPage('toDashboard')">SignUp!</a> --}}
           </div>
           <div class="imgBox">
             <img src="logo.png" class="food" alt="some food image">
           </div>
         </div>
        
-      </section>
+      </section> --}}
 <nav>
     {{#if logged_in}}
     <a href="/profile">profile</a> 
