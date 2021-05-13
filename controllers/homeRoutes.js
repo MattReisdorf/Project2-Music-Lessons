@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         res.redirect('/lessons');
         return;
     }
-
+    
     res.render('landing');
 })
 
