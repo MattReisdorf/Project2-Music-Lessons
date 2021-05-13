@@ -4,6 +4,7 @@ const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
+        console.log(req.session);
         const lessonData = await Lesson.findAll({
             include: {
                 model: Notes,
@@ -18,7 +19,8 @@ router.get('/', async (req, res) => {
                             'lesson_id']
             }
         });
-        // const lessonData = await Lesson.findAll();
+        console.log(lessonData);
+
         res.status(200).json(lessonData);
     }
     catch (err) {
@@ -58,8 +60,17 @@ router.get('/:id', async (req, res) => {
 
 
 router.post('/', async (req, res) => {
+
     try{
-        const lessonData = Lesson.create(req.body)
+        console.log(req.session);
+        const lessonData = await Lesson.create({
+            ...req.body,
+        user_id: req.session.user_id})
+
+        const notesData = await Notes.create({
+            ...req.body,
+            lesson_id: lessonData.id
+        })
         res.status(200).json({ lessonData })
     }
     catch (err) {
