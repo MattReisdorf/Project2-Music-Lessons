@@ -1,7 +1,7 @@
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 # Scaled
 
-## Full stack web application where users can create and view their own musical scale lessons. Currently supports lessons of 7 or fewer notes. Future updates will include support for the full chromatic scale, as well as the pitch detection model from the [ml5js](!https://github.com/ml5js) team.
+## Full stack web application where users can create and view their own musical scale lessons. Currently supports lessons of 7 or fewer notes. Future updates will include support for the full chromatic scale, as well as the pitch detection model from the [ml5js](https://github.com/ml5js) team.
 
 #
 
@@ -21,7 +21,7 @@ Otherwise, the link to the deployed version can be found below.
 
 ## Usage
 
-The live application can be found [here](!https://sleepy-falls-53764.herokuapp.com/lessons). Feel free to make an account and check it out yourself. 
+The live application can be found [here](https://sleepy-falls-53764.herokuapp.com/lessons). Feel free to make an account and check it out yourself. 
 
 ![landing](./public/assets/screenshots/landing.png)
 ![login](./public/assets/screenshots/login.png)
@@ -34,13 +34,13 @@ The live application can be found [here](!https://sleepy-falls-53764.herokuapp.c
 
 ## Credits
 
-[Matt Reisdorf](!https://github.com/MattReisdorf)
+[Matt Reisdorf](https://github.com/MattReisdorf)
 
-[Karina Ayala](!https://github.com/Karina1023)
+[Karina Ayala](https://github.com/Karina1023)
 
-[Harrison Blackburn](!https://github.com/harrisonblackburn)
+[Harrison Blackburn](https://github.com/harrisonblackburn)
 
-[Jason Carrazco](!https://github.com/JAC61090)
+[Jason Carrazco](https://github.com/JAC61090)
 
 
 ## License
