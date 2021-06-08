@@ -21,15 +21,21 @@
 </header>
 
 
+<span class = "hidden-span" id = "hidden-note-span">
+    {{notes}}
+</span>
+
+
+
 <div class = "center-screen">
     <div class = "placeholder-box" id = 'note-box'>
-        {{#each notes as |note|}}
+        {{!-- {{#each notes as |note|}} --}}
 
-
+        
         <span class = "placeholder-span" id = "note-span">
-            {{note}}
+            {{!-- {{note}} --}}
         </span>
-        {{/each}}
+        {{!-- {{/each}} --}}
     </div>
 </div>
 
@@ -41,3 +47,5 @@
         </button>
     </div>
 </footer>
+
+<script src = '/js/notes.js' type = "module"></script>

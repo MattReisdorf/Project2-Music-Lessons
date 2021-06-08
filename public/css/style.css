@@ -26,13 +26,13 @@
 }
 
 .placeholder-box {
-    background-color: black;
+    background-color: white;
     padding-left: 15px;
     padding-right: 15px;
 }
 
 .placeholder-span {
-    color: white;
+    color: black;
     font-size: 3em;
 }
 
@@ -47,6 +47,10 @@
 
 .card {
     margin-top: 20px;
+}
+
+.hidden-note-span {
+    display: none;
 }
 
 @media screen and (max-width: 500px) {
